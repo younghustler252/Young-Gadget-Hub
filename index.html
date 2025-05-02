@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUNG GADGET HUB </title>
+    <meta name="description" content="young Gadget hub – Buy phones, laptops, headphones, and other tech gadgets at affordable prices.">
+    <meta name="keywords" content="young, gadget hub,phones, laptops, headphones, electronics, online tech store, buy gadgets Nigeria">
+    <meta name="author" content="YoungTech252" />
+
+     <!-- Open Graph (for better sharing on social media) -->
+    <meta property="og:title" content="YoungTech Gadget Store" />
+    <meta property="og:description" content="Affordable phones, laptops, headphones & more – built by YoungTech252" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://Younghustler252.github.io/young-gadget-hub/" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="assets/logo.jpg" class="logo-link">
+                <img class="logo" src="assets/logo.jpg" alt="">
+                <h2>YOUNG GADGET</h2>
+            </a>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Feature</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <img src="assets/jbl-extreme3.jpg" alt=""> -->
+                </ul>
+                <div id="cart-icon">
+                    🛒 <span id="cart-count">0</span>
+                </div>            
+            </nav>
+            <div class="menu-icon" id="menu-icon" onclick="showMenu('')">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header> 
+    <section class="hero-section" id="home">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h1>Welcome to Young Gadget</h1>
+                <p>Purest plug for the latest tech🔥🔥</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/young-hero-image.png" alt="Gadget Hero Image">   
+            </div>
+        </div>
+    </section>
+    <div class="cart-absolute" id="cart-icon">
+        🛒 <span id="cart-count">0</span>
+    </div>
+    <section class="features-section container" id="features">
+        <h2 class="section-title">Our Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-ship"></i>
+                <h3>Latest Tech</h3>
+                <p>We bring you the newest gadgets as soon as they hit the market.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Quality Assurance</h3>
+                <p>Strict quality checks for durability and performance.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Best Prices</h3>
+                <p>Affordable pricing without compromise.</p>
+            </div>
+        </div>       
+    </section>
+    <section class="product-section" id="products">
+        <h2>Our Product</h2>
+        <div class="product-category">
+            <h3>Smartphones</h3>
+            <div class="slider-container">
+                <button class="slider-btn left">&#10094;</button>
+                <div class="card-slider" id="smartphone-slider">
+                <!-- -------insidejavascrip---- -->
+                </div>
+                <button class="slider-btn right">&#10095;</button>
+            </div>
+            <a href="#" class="view-all-btn">View All Smartphones</a>
+        </div>
+
+        <div class="product-category">
+            <h3>Laptops</h3>
+            <div class="slider-container">
+                <button class="slider-btn left">&#10094;</button>
+                <div class="card-slider" id="laptop-slider">
+                <!-- -------insidejavascrip---- -->
+                </div>
+                <button class="slider-btn right">&#10095;</button>
+            </div>
+            <a href="#" class="view-all-btn">View All Laptops</a>
+        </div>
+        <div class="product-category">
+            <h3>Headphones</h3>
+            <div class="slider-container">
+                <button class="slider-btn left">&#10094;</button>
+                <div class="card-slider" id="headphone-slider">
+                <!-- -------insidejavascrip---- -->
+                </div>
+                <button class="slider-btn right">&#10095;</button>
+            </div>
+            <a href="#" class="view-all-btn">View All Laptops</a>
+        </div>
+       
+    </section>
+    <div id="cart-sidebar">
+        <button id="cart-close">×</button>
+        <h3>Your Cart</h3>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <strong>Total:</strong> <span id="cart-total">$0.00</span>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <section class="contact-us-section" id="contact">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+            <div class="contact-grid">
+                <form action="#" method="post" id="contactForm" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+08080061178">+234 808 000 61178</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Younghustler252@gmail.com">Younghustler252@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="">5 Adepele Street, Computer Village, Ikeja</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <div class="whatsapp-icon">
+        <a target="_blank" href="https://wa.link/d02ljd"> 
+            <i class="fab fa-whatsapp"></i>
+        </a>    
+    </div>
+      
+</body>
+<script src="js/nav.js"></script>
+<script src="js/card-slider.js"></script>
+<!-- <script src="js/add-cart.js"></script> -->
+</html>
