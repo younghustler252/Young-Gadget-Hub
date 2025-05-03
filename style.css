@@ -77,6 +77,14 @@ nav ul a:hover{
     border-radius: 5px;
     cursor: pointer;
 }
+#overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 100;
+  }
 .menu-icon{
     display: none;
     font-size: 30px;
@@ -254,6 +262,10 @@ nav ul a:hover{
         right: 0;
         animation: fadeInLeft 1s ease forwards;
     }
+      
+      #overlay.active {
+        display: block;
+      }
 }
   
 @keyframes fadeInDown {
