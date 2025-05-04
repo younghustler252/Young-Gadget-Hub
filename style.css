@@ -15,6 +15,9 @@ body {
     scroll-behavior: smooth;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     position: sticky;
     top: 0;
@@ -285,7 +288,7 @@ nav ul a:hover{
 /* ===============our product section================ */
 
 .product-section {
-    padding: 3rem 1.5rem;
+    padding: 6rem 1.5rem;
 }
 .product-section h2{
     font-size: 2.5rem;
